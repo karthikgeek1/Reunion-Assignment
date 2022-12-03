@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+
 import Home from './components/Home/Home';
 import Favourites from './components/Favourites/Favourites';
+
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
 
 function App() {
   const [favourites, setFavourites] = useState([])

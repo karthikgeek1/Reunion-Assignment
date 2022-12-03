@@ -4,69 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-.flex{
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  border: 2px solid black;
-}
-h1{
-  padding: 30px;
-}
 
-.datepicker{
-  background-color: white;
-  height: 50px;
-  width: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-}
-.filter-btn{
-  height: 50px;
-  width: 100px;
-  border: 0px;
-  background-color: blueviolet;
-  color: white;
-}
-.filter-container{
-  height: 100px;
-  width: 80%;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.filter-wrap{
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 30px;
-}
 .App{
   background-color: rgb(237, 239, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.Location{
-  padding: 10px;
-}
-.card-containers{
-  padding: 50px;
-  height: auto;
-  width: 79vw;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-} 
-.sub-card-cont{
-  padding: 30px;
 }

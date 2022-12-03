@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
+
 import './Card.css'
 
 const Card = ({name, location, date, property, price, image, favourites, setFavourites, item}) => {
     const handleFavourite=()=>{
         if(!favourites.includes(item)){
             setFavourites([...favourites, item])
-            console.log(favourites)
         }
     }
     return (

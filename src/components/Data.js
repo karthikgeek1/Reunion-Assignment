@@ -7,7 +7,7 @@ export const data = [
         location: 'New York, USA',
         priceRange: '3000-6000',
         propertyType: 'house',
-        date: '2022-12-2',
+        date: '2022-12-02',
         isLiked:false
     },
     {
@@ -18,7 +18,7 @@ export const data = [
         location: 'London, UK',
         priceRange: '500-1000',
         propertyType: 'Bunglow',
-        date:'2022-12-3',
+        date:'2022-12-03',
         isLiked:false
     },
     {
@@ -29,7 +29,7 @@ export const data = [
         location: 'Singapore',
         priceRange: '1500-3000',
         propertyType: 'villa',
-        date:'2022-12-4',
+        date:'2022-12-04',
         isLiked:false
     },
     {
@@ -40,7 +40,7 @@ export const data = [
         location: 'New York, USA',
         priceRange: '3000-6000',
         propertyType: 'house',
-        date:'2022-12-5',
+        date:'2022-12-05',
         isLiked:false
     },
     {
@@ -51,7 +51,7 @@ export const data = [
         location: 'Singapore',
         priceRange: '500-1000',
         propertyType: 'Bunglow',
-        date:'2022-12-6',
+        date:'2022-12-06',
         isLiked:false
     },
     {
@@ -62,7 +62,7 @@ export const data = [
         location: 'London, Uk',
         priceRange: '3000-6000',
         propertyType: 'villa',
-        date:'2022-12-7',
+        date:'2022-12-07',
         isLiked:false
     },
 ]

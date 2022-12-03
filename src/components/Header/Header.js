@@ -1,11 +1,13 @@
 import React from 'react'
-import './Header.css'
 import { NavLink } from 'react-router-dom'
+
+import './Header.css'
+
 const Header = () => {
     return (
         <div className='Nav'>
             <div className='logo'>
-                <i class="fa-solid fa-house fa-2x logofont"></i>
+                <i class="fa-solid fa-house fa-2x logofont"/>
                 <h3>Estatery</h3>
             </div>
             <ul>
