@@ -36,6 +36,8 @@ const Home = ({favourites, setFavourites}) => {
         handleFilter()
     },[location, property, price, date])
 
+//filtering the data as per the requirement i.e price, location,property, date....//
+
     const handleFilter=()=>{
         let filData = data.filter((item)=>{
             if((item.location.toLowerCase().includes(location.toLocaleLowerCase())|| location==="") && (item.propertyType.toLowerCase().includes(property.toLowerCase())||property==="") && (item.priceRange.includes(price) || price==="") && (item.date>date || date=="")){
@@ -44,10 +46,15 @@ const Home = ({favourites, setFavourites}) => {
         })
         setFilterData(filData)
     }
+    
+//handeling all the changes in state//
 
     const handleChange=(e)=>{
         if(e.target.name==='price'){
             setPrice(e.target.value)
+        }
+        else if(e.target.name=='search'){
+            setSearchVal(e.target.value)
         }
         else if(e.target.name==='location'){
             setLocation(e.target.value)
@@ -65,7 +72,7 @@ const Home = ({favourites, setFavourites}) => {
             <Header />
             <h1>Search properties for Rent</h1>
             <div className='search container'>
-                <input type='text' placeholder='search' value={searchVal} onChange={(e) => setSearchVal(e.target.value)} className='search-bar' />&nbsp;
+                <input type='text' placeholder='search' value={searchVal} name='search' onChange={handleChange} className='search-bar' />&nbsp;
                 <button className='search-btn' onClick={handleSearch}>search</button>
             </div>
             <div className='filter-wrap'>

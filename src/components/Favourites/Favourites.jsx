@@ -11,11 +11,11 @@ const Favourites = ({favourites, setFavourites}) => {
       <div className='flex2'>
       <div className='card-containers'>
       {
-        favourites.map((item, index)=>(
+        favourites.length>0?(favourites.map((item, index)=>(
             <div className='sub-card-cont'>
                 <Card key={index} name={item.name} location={item.location} date={item.date} property={item.propertyType} price={item.price} image={item.image} favourites={favourites} setFavourites={setFavourites} item={item}/>
-            </div>
-        ))
+            </div>)
+        )):(<i class="fa-solid fa-2x fa-circle-exclamation">  No data found</i>)
       }
       </div>
       </div>
